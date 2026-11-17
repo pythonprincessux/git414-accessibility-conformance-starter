@@ -63,7 +63,7 @@ main {
 }
 
 .hero-subtitle {
-    margin: 0 0 16px;
+  margin: 0 0 16px;
   color: #ffc627;
   font-weight: 700;
 }
@@ -88,7 +88,7 @@ button {
 .cards {
   display: grid;
   grid-template-columns:
-  repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 20px;
 }
 
@@ -106,7 +106,7 @@ button {
 }
 
 .card a {
-color: #8c1d40;
+  color: #8c1d40;
 }
 
 .animated-card {
@@ -146,9 +146,20 @@ table {
   border-collapse: collapse;
 }
 
+th,
 td {
   padding: 10px 12px;
   border: 1px solid #cccccc;
+}
+
+th,
+caption {
+  text-align: start;
+}
+
+caption {
+  padding-block-end: 0.5rem;
+  font-weight: 700;
 }
 
 /* Keep content readable when space is limited. */
