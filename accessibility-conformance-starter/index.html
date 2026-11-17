@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accessibility Practice Lab</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">Community Tech Day</div>
@@ -51,16 +53,22 @@
     <section id="register" class="section">
       <h2>Register interest</h2>
       <form>
-        <p>Fields marked with an asterisk are required.</p>
+        <p id="form-help">
+          Practice form only. Fields marked * are required.
+          No registration is saved.
+        </p>
+
         <div class="field">
-          <span>Name *</span>
-          <input id="name" name="name" type="text">
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="form-help" required>
         </div>
+
         <div class="field">
-          <label>Email</label>
-          <input id="email" name="email" type="email" required>
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="form-help" required>
         </div>
-        <button type="submit"></button>
+
+        <button type="submit">Submit practice form</button>
       </form>
     </section>
 
@@ -86,4 +94,5 @@
     </section>
   </main>
 </body>
+
 </html>
