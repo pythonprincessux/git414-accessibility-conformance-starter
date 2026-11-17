@@ -62,9 +62,10 @@ main {
   font-size: 48px;
 }
 
-.hero h3 {
-  margin: 0 0 16px;
+.hero-subtitle {
+    margin: 0 0 16px;
   color: #ffc627;
+  font-weight: 700;
 }
 
 .button-like,
